@@ -13,7 +13,7 @@ Example
 # Standard, full country names
 country_select("user", "country_name")
 
-# Two-character country names as the select values
-country_select("user", "country_abbreviation", [], 2)
+# Two-character abbreviations as the select values
+country_select("user", "country_abbreviation", [['United States','US']], {:country_code => 2})
 
 Copyright (c) 2008 Michael Koziarski, released under the MIT license

@@ -135,7 +135,7 @@ module ActionView
         content_tag("select",
           add_options(
             country_options_for_select(value, priority_countries,
-              options.has_key?(:country_code) ? options[:country_code] : 'FULL'
+              options[:country_code].presence || 'FULL'
             ),
             options, value
           ), html_options
